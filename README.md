@@ -26,11 +26,17 @@ Available as PDF and EPUB in the [Releases](https://github.com/NORSAB/databricks
 - Module 6: Guardrails, API gateway rate limits, and egress data filters.
 - Appendix: Exam cheat sheet, terms glossary, and practice questions with answers.
 
-## Author
+## About the Author
 
-Norman Sabillon  
-Data Architect and Qualtop Brand Ambassador  
-GitHub: [@NORSAB](https://github.com/NORSAB)
+**Norman Sabillón** is an Enterprise Data Architect and Artificial Intelligence specialist with over a decade of experience designing enterprise data platforms, lakehouse architectures, and executive visual analytics in multilateral banking.
+
+He holds a degree in Electrical Engineering, an M.Sc. in Mathematics and Statistics (UNAH), an M.Sc. in Big Data and Visual Analytics (UNIR), and is completing doctoral research in Artificial Intelligence at UNADE. He has trained hundreds of data professionals across Latin America in modern data engineering, BI, and Databricks architectures.
+
+This study guide was developed as part of his first year in the **Qualtop Brand Ambassadors Program (Q4 2026)** and connects with his technical series *El Puente al Machine Learning*.
+
+### Connect
+- **LinkedIn:** [norman-reynaldo-sabillon-castro](https://www.linkedin.com/in/norman-reynaldo-sabillon-castro)
+- **GitHub:** [@NORSAB](https://github.com/NORSAB)
 
 ## License
 
