@@ -1,18 +1,20 @@
-# Databricks Generative AI Engineer Study Guide
+# GenAI Engineering with Databricks: E-Book & Study Guide
 
-Notes and architecture diagrams covering the Databricks Generative AI Engineer Associate certification curriculum.
+Official open-source technical e-book and downloadable study guide covering the Databricks Generative AI Engineer Associate certification curriculum (Modules 0 to 6).
 
 [![Databricks](https://img.shields.io/badge/Databricks-GenAI%20Engineering-FF3621?logo=databricks&logoColor=white)](https://www.databricks.com/)
 [![Qualtop Brand Ambassador](https://img.shields.io/badge/Qualtop-Brand%20Ambassador-E83808)](https://qualtop.com/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-I put these notes together while studying for the certification as part of my first year in the Qualtop Brand Ambassadors Program. The material follows the official blueprint across all seven chapters (Modules 0 to 6), focusing on how the pieces connect in Databricks: Delta tables feeding Vector Search, Unity Catalog securing agent tools, and MLflow tracking traces and evals.
+Authored by Norman Sabillón as part of his first year in the **Qualtop Brand Ambassadors Program (Q4 2026)**. This practical e-book focuses on how production systems actually connect in Databricks: Delta tables streaming into Vector Search via Change Data Feed, Unity Catalog securing tools and endpoints, and MLflow orchestrating evaluation suites and agent traces.
 
-## Formats and Source
+## Download the E-Book
 
-- [guide.epub](https://github.com/NORSAB/databricks-genai-study-guide/releases/download/v1.0.0/guide.epub) (e-readers, tablets, and phones)
-- [guide.pdf](https://github.com/NORSAB/databricks-genai-study-guide/releases/download/v1.0.0/guide.pdf) (laptops and desktop screens)
-- [source/guide.md](source/guide.md) (full text in Markdown, readable directly on GitHub)
+The e-book is available in two official downloadable editions, with the full source text accessible directly in the repository:
+
+- **[Download E-Book (EPUB)](https://github.com/NORSAB/databricks-genai-study-guide/releases/download/v1.0.0/guide.epub):** Optimized for Apple Books, Kindle, Kobo, iPad, and mobile reading.
+- **[Download E-Book (PDF)](https://github.com/NORSAB/databricks-genai-study-guide/releases/download/v1.0.0/guide.pdf):** 49-page formatted layout with high-resolution architecture diagrams for desktop reading.
+- **[Full Markdown Source (source/guide.md)](source/guide.md):** Complete unabridged text readable directly on GitHub.
 
 ## Chapters
 

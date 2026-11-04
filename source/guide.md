@@ -2051,21 +2051,15 @@ rest yourself.
 
 # About the author
 
-**Norman Sabillón** is an Artificial Intelligence, Data Architecture,
-and Visual Analytics specialist. He holds a degree in Electrical
-Engineering, an M.Sc. in Mathematics and Statistics, and is a Ph.D.
-candidate in Artificial Intelligence at UNADE.
+**Norman Sabillón** is an Enterprise Data Architect and Artificial Intelligence specialist with a background spanning electrical engineering, applied mathematics, and machine learning systems. He holds an M.Sc. in Mathematics and Statistics from UNAH, an M.Sc. in Big Data from UNIR, and is currently completing his Ph.D. in Artificial Intelligence at UNADE.
 
-He leads large-scale enterprise analytics and executive
-data-visualization initiatives in multilateral banking and has trained
-hundreds of data professionals across Latin America in Power BI,
-Tableau, and modern Lakehouse architecture on Databricks. His work
-bridges mathematical rigor, production data engineering, and clean,
-high-impact visual design.
+His enterprise practice focuses on visual analytics, modern Lakehouse systems, and executive decision intelligence, with deep experience in multilateral banking architectures. Over his career, he has taught hands-on courses in Power BI, Tableau, SQL, advanced analytics, and statistical modeling, helping technical teams across Latin America connect rigorous mathematical foundations with production software engineering.
 
-This study guide builds on his Spanish-language technical series *El
-Puente al Machine Learning* (Modules 0 to 6) and was created as part of
-the **Qualtop Brand Ambassadors Program (Q4 2026)**.
+Approaching his first full year as a Qualtop Brand Ambassador, Norman has focused on turning daily engineering practice into practical, open technical resources. The ambassador initiative has served as a practical proving ground for professional branding, demonstrating that making technical depth visible and sharing knowledge openly is the most direct way to elevate regional engineering talent.
+
+Outside of data architecture, Norman has practiced traditional Kung-Fu and Wushu for more than 21 years. Training outdoors year-round, he is an active member of the coaching staff supporting the Honduras National Wushu Kung-Fu Team in traditional Hung Gar. The martial requirements of patience, structural balance, and relentless precision directly ground his approach to system engineering and mentoring.
+
+This study guide extends his practical series *El Puente al Machine Learning* (Modules 0 to 6), developed for the **Qualtop Brand Ambassadors Program (Q4 2026)**.
 
 </div>
 
