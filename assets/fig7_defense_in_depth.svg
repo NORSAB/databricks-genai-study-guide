@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" role="img" aria-label="Figure 7.1: Four-Layer Defense-in-Depth Architecture">
+  <title>Figure 7.1: Four-Layer Defense-in-Depth Architecture</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+      text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', Consolas, monospace !important;
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#050505"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#A8A8A8"/>
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#E83808"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="480" rx="8" fill="#F8F8F8"/>
+  <rect x="1" y="1" width="798" height="478" rx="7" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <text x="32" y="44" font-size="18" font-weight="800" fill="#050505" letter-spacing="-0.01em">FOUR-LAYER DEFENSE-IN-DEPTH ARCHITECTURE</text>
+  <text x="32" y="68" font-size="13" font-weight="500" fill="#6B6B6B">System prompts are not security perimeters; production safety requires concentric controls</text>
+
+  <!-- Layer 1 -->
+  <g id="caja-1">
+    <rect x="32" y="104" width="166" height="270" rx="6" fill="#FFFFFF" stroke="#050505" stroke-width="1.5"/>
+    <text x="50" y="138" font-size="12.5" font-weight="700" fill="#6B6B6B">LAYER 01</text>
+    <text x="50" y="162" font-size="15" font-weight="800" fill="#050505">AI Gateway</text>
+    
+    <text x="50" y="200" font-size="13" font-weight="700" fill="#050505">Ingress Gate</text>
+    <text x="50" y="220" font-size="13" font-weight="500" fill="#6B6B6B">Rate limits</text>
+    <text x="50" y="240" font-size="13" font-weight="500" fill="#6B6B6B">PII redaction</text>
+    
+    <text x="50" y="280" font-size="13" font-weight="700" fill="#050505">Protection</text>
+    <text x="50" y="300" font-size="13" font-weight="500" fill="#6B6B6B">Jailbreak guard</text>
+    <text x="50" y="320" font-size="13" font-weight="500" fill="#6B6B6B">Topic filters</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <g id="flecha-1">
+    <line x1="198" y1="239" x2="220" y2="239" stroke="#050505" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Layer 2 -->
+  <g id="caja-2">
+    <rect x="222" y="104" width="166" height="270" rx="6" fill="#FFFFFF" stroke="#050505" stroke-width="1.5"/>
+    <text x="240" y="138" font-size="12.5" font-weight="700" fill="#6B6B6B">LAYER 02</text>
+    <text x="240" y="162" font-size="15" font-weight="800" fill="#050505">Unity Catalog</text>
+    
+    <text x="240" y="200" font-size="13" font-weight="700" fill="#050505">Retrieval ACL</text>
+    <text x="240" y="220" font-size="13" font-weight="500" fill="#6B6B6B">Row filters</text>
+    <text x="240" y="240" font-size="13" font-weight="500" fill="#6B6B6B">Column masks</text>
+    
+    <text x="240" y="280" font-size="13" font-weight="700" fill="#050505">Governance</text>
+    <text x="240" y="300" font-size="13" font-weight="500" fill="#6B6B6B">Pre-retrieval</text>
+    <text x="240" y="320" font-size="13" font-weight="500" fill="#6B6B6B">Lineage audit</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 (Highlighted) -->
+  <g id="flecha-2">
+    <line x1="388" y1="239" x2="410" y2="239" stroke="#E83808" stroke-width="2" marker-end="url(#arrow-accent)"/>
+  </g>
+
+  <!-- Layer 3 (Clean #E83808 label) -->
+  <g id="caja-3">
+    <rect x="412" y="104" width="166" height="270" rx="6" fill="#FFFFFF" stroke="#E83808" stroke-width="2"/>
+    <text x="430" y="138" font-size="12.5" font-weight="700" fill="#E83808" letter-spacing="0.05em">LAYER 03</text>
+    <text x="430" y="162" font-size="15" font-weight="800" fill="#E83808">Tool Sandbox</text>
+    
+    <text x="430" y="200" font-size="13" font-weight="700" fill="#050505">Least Privilege</text>
+    <text x="430" y="220" font-size="13" font-weight="500" fill="#6B6B6B">Read-only SQL</text>
+    <text x="430" y="240" font-size="13" font-weight="500" fill="#6B6B6B">Scoped Python</text>
+    
+    <text x="430" y="280" font-size="13" font-weight="700" fill="#050505">Human Gate</text>
+    <text x="430" y="300" font-size="13" font-weight="500" fill="#E83808">Approval step</text>
+    <text x="430" y="320" font-size="13" font-weight="500" fill="#6B6B6B">For write tools</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <g id="flecha-3">
+    <line x1="578" y1="239" x2="600" y2="239" stroke="#050505" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Layer 4 -->
+  <g id="caja-4">
+    <rect x="602" y="104" width="166" height="270" rx="6" fill="#FFFFFF" stroke="#050505" stroke-width="1.5"/>
+    <text x="620" y="138" font-size="12.5" font-weight="700" fill="#6B6B6B">LAYER 04</text>
+    <text x="620" y="162" font-size="15" font-weight="800" fill="#050505">Output &amp; Audit</text>
+    
+    <text x="620" y="200" font-size="13" font-weight="700" fill="#050505">Egress Guard</text>
+    <text x="620" y="220" font-size="13" font-weight="500" fill="#6B6B6B">PII filter</text>
+    <text x="620" y="240" font-size="13" font-weight="500" fill="#6B6B6B">Toxicity check</text>
+    
+    <text x="620" y="280" font-size="13.5" font-weight="700" fill="#050505">Delta Audit</text>
+    <text x="620" y="300" font-size="13" font-weight="500" fill="#6B6B6B">Inference table</text>
+    <text x="620" y="320" font-size="13" font-weight="500" fill="#6B6B6B">Full trace span</text>
+  </g>
+
+  <g id="takeaway">
+    <rect x="32" y="402" width="736" height="48" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <text x="48" y="431" font-size="12.5" font-weight="500" fill="#6B6B6B">
+      <tspan font-weight="700" fill="#050505">Security Axiom: </tspan>Apply guardrails before retrieval and during tool binding, never purely in the prompt.
+    </text>
+  </g>
+</svg>

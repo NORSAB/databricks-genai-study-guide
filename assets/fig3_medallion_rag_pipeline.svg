@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" role="img" aria-label="Figure 3.1: Medallion Ingestion for RAG Architecture">
+  <title>Figure 3.1: Medallion Ingestion for RAG Architecture</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap');
+      text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', Consolas, monospace !important;
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#050505"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#A8A8A8"/>
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#E83808"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="480" rx="8" fill="#F8F8F8"/>
+  <rect x="1" y="1" width="798" height="478" rx="7" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <text x="32" y="44" font-size="18" font-weight="800" fill="#050505" letter-spacing="-0.01em">MEDALLION INGESTION FOR RAG ARCHITECTURE</text>
+  <text x="32" y="68" font-size="13" font-weight="500" fill="#6B6B6B">Document processing pipeline from raw files to continuously synchronized vector search</text>
+
+  <!-- Bronze -->
+  <g id="caja-1">
+    <rect x="32" y="104" width="206" height="270" rx="6" fill="#FFFFFF" stroke="#050505" stroke-width="1.5"/>
+    <text x="54" y="140" font-size="13" font-weight="700" fill="#6B6B6B" letter-spacing="0.05em">STAGE 01</text>
+    <text x="54" y="166" font-size="17" font-weight="800" fill="#050505">Bronze: Raw</text>
+    
+    <text x="54" y="206" font-size="13.5" font-weight="700" fill="#050505">UC Volumes</text>
+    <text x="54" y="228" font-size="13" font-weight="500" fill="#6B6B6B">PDF, DOCX, HTML, MD</text>
+    
+    <text x="54" y="266" font-size="13.5" font-weight="700" fill="#050505">Auto Loader</text>
+    <text x="54" y="288" font-size="13" font-weight="500" fill="#6B6B6B">Streaming cloudFiles</text>
+    
+    <text x="54" y="326" font-size="13.5" font-weight="700" fill="#050505">Raw Audit</text>
+    <text x="54" y="348" font-size="13" font-weight="500" fill="#6B6B6B">Append-only storage</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <g id="flecha-1">
+    <line x1="238" y1="239" x2="292" y2="239" stroke="#050505" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Silver -->
+  <g id="caja-2">
+    <rect x="296" y="104" width="206" height="270" rx="6" fill="#FFFFFF" stroke="#050505" stroke-width="1.5"/>
+    <text x="318" y="140" font-size="13" font-weight="700" fill="#6B6B6B" letter-spacing="0.05em">STAGE 02</text>
+    <text x="318" y="166" font-size="17" font-weight="800" fill="#050505">Silver: Clean</text>
+    
+    <text x="318" y="206" font-size="13.5" font-weight="700" fill="#050505">Document Parsing</text>
+    <text x="318" y="228" font-size="13" font-weight="500" fill="#6B6B6B">Layout-aware parser</text>
+    
+    <text x="318" y="266" font-size="13.5" font-weight="700" fill="#050505">Boilerplate Strip</text>
+    <text x="318" y="288" font-size="13" font-weight="500" fill="#6B6B6B">Headers &amp; footers out</text>
+    
+    <text x="318" y="326" font-size="13.5" font-weight="700" fill="#050505">Deduplication</text>
+    <text x="318" y="348" font-size="13" font-weight="500" fill="#6B6B6B">Content-hash check</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 (Highlighted) -->
+  <g id="flecha-2">
+    <line x1="502" y1="239" x2="556" y2="239" stroke="#E83808" stroke-width="2" marker-end="url(#arrow-accent)"/>
+  </g>
+
+  <!-- Gold (Clean #E83808 label) -->
+  <g id="caja-3">
+    <rect x="560" y="104" width="208" height="270" rx="6" fill="#FFFFFF" stroke="#E83808" stroke-width="2"/>
+    <text x="582" y="140" font-size="13" font-weight="700" fill="#E83808" letter-spacing="0.05em">STAGE 03</text>
+    <text x="582" y="166" font-size="17" font-weight="800" fill="#E83808">Gold: Chunks</text>
+    
+    <text x="582" y="206" font-size="13.5" font-weight="700" fill="#050505">Token Chunking</text>
+    <text x="582" y="228" font-size="13" font-weight="500" fill="#6B6B6B">256–512 tokens + overlap</text>
+    
+    <text x="582" y="266" font-size="13.5" font-weight="700" fill="#050505">Delta CDF Sync</text>
+    <text x="582" y="288" font-size="13" font-weight="500" fill="#E83808">enableChangeDataFeed</text>
+    
+    <text x="582" y="326" font-size="13.5" font-weight="700" fill="#050505">Vector Search</text>
+    <text x="582" y="348" font-size="13" font-weight="500" fill="#6B6B6B">Managed hybrid index</text>
+  </g>
+
+  <g id="takeaway">
+    <rect x="32" y="402" width="736" height="48" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <text x="48" y="431" font-size="12.5" font-weight="500" fill="#6B6B6B">
+      <tspan font-weight="700" fill="#050505">Exam Tip: </tspan>Enable Change Data Feed on Gold tables to let Mosaic AI Vector Search sync automatically.
+    </text>
+  </g>
+</svg>
