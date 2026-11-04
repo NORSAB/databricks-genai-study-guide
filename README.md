@@ -8,12 +8,11 @@ Notes and architecture diagrams covering the Databricks Generative AI Engineer A
 
 I put these notes together while studying for the certification. The material follows the official blueprint from module 0 to module 6, focusing on how the pieces connect in Databricks: Delta tables feeding Vector Search, Unity Catalog securing agent tools, and MLflow tracking traces and evals.
 
-## Downloads
-
-Available as PDF and EPUB in the [Releases](https://github.com/NORSAB/databricks-genai-study-guide/releases/latest) section:
+## Formats and Source
 
 - [guide.epub](https://github.com/NORSAB/databricks-genai-study-guide/releases/download/v1.0.0/guide.epub) (e-readers, tablets, and phones)
 - [guide.pdf](https://github.com/NORSAB/databricks-genai-study-guide/releases/download/v1.0.0/guide.pdf) (laptops and desktop screens)
+- [source/guide.md](source/guide.md) (full text in Markdown, readable directly on GitHub)
 
 ## Topics Covered
 
